@@ -6,19 +6,18 @@ pip install lolcat
 apt install figlet -y
 clear
 echo Metasploit framework by AvengerRohit | lolcat
-echo
-center "*** Follow me on..."
-echo ******** | lolcat
+echo Follow me on... | lolcat
+echo -------- | lolcat
 echo YouTube:- https://youtube.com/channel/UCu05CAzdllrz4qFyK08etXg
-echo ******** | lolcat
+echo -------- | lolcat
 echo Telegram:- https://t.me/avengerrohit_telegram
-echo ******** | lolcat
+echo -------- | lolcat
 echo Instagram:- https://www.instagram.com/avengerrohit/
-echo ******** ! lolcat
+echo -------- | lolcat
 echo GitHub:- https://github.com/avengerrohit/
-echo ******** | lolcat
+echo -------- | lolcat
 echo Website:- www.avengerrohit.com
-echo ******** | lolcat
+echo -------- | lolcat
 figlet AvengerRohit | lolcat
 center() {
   termwidth=$(stty size | cut -d" " -f2)
@@ -32,8 +31,8 @@ source <(echo "c3Bpbm5lcj0oICd8JyAnLycgJy0nICdcJyApOwoKY291bnQoKXsKICBzcGluICYKI
 
 echo
 center "*** Dependencies installation..."
-pkg upgrade -y -o Dpkg::Options::="--force-confnew"
-pkg install -y autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ruby ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git -o Dpkg::Options::="--force-confnew"
+pkg upgrade -y -o Dpkg::Options::="--force-confnew" | lolcat
+pkg install -y autoconf bison clang coreutils curl findutils apr apr-util postgresql openssl readline libffi libgmp libpcap libsqlite libgrpc libtool libxml2 libxslt ncurses make ruby ncurses-utils ncurses git wget unzip zip tar termux-tools termux-elf-cleaner pkg-config git -o Dpkg::Options::="--force-confnew" | lolcat
 
 echo
 center "*** Fix ruby BigDecimal"
@@ -46,22 +45,20 @@ rm -rf $HOME/metasploit-framework
 echo
 center "*** Downloading..."
 cd $HOME
-git clone https://github.com/rapid7/metasploit-framework.git
-
+git clone https://github.com/rapid7/metasploit-framework.git | lolcat
 echo
 center "*** Installation..."
 cd $HOME/metasploit-framework
 sed '/rbnacl/d' -i Gemfile.lock
 sed '/rbnacl/d' -i metasploit-framework.gemspec
-gem install bundler
+gem install bundler | lolcat
 sed 's|nokogiri (1.*)|nokogiri (1.8.0)|g' -i Gemfile.lock
 
-gem install nokogiri -v 1.8.0 -- --use-system-libraries
-
-gem install actionpack
-bundle update activesupport
-bundle update --bundler
-bundle install -j5
+gem install nokogiri -v 1.8.0 -- --use-system-libraries | lolcat
+gem install actionpack | lolcat
+bundle update activesupport | lolcat
+bundle update --bundler | lolcat
+bundle install -j5 | lolcat
 $PREFIX/bin/find -type f -executable -exec termux-fix-shebang \{\} \;
 rm ./modules/auxiliary/gather/http_pdf_authors.rb
 if [ -e $PREFIX/bin/msfconsole ];then
