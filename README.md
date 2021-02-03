@@ -7,7 +7,7 @@ Install Metasploit framework in a few steps from this repository...
 
 👉apt install git -y
 
-👉git clone 
+👉git clone https://github.com/avengerrohit/Metasploit-framework.git
 
 👉cd Metasploit-framework/
 
