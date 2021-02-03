@@ -3,17 +3,17 @@ Install Metasploit framework in a few steps from this repository...
 1. Download Termux application from Play Store.
 2. Open Termux and type these commands...
 
-👉apt update && apt upgrade -y
+👉 apt update && apt upgrade -y
 
-👉apt install git -y
+👉 apt install git -y
 
-👉git clone https://github.com/avengerrohit/Metasploit-framework.git
+👉 git clone https://github.com/avengerrohit/Metasploit-framework.git
 
-👉cd Metasploit-framework/
+👉 cd Metasploit-framework/
 
-👉chmod +x *
+👉 chmod +x *
 
-👉bash metasploit.sh
+👉 bash metasploit.sh
 
 $ Done... After complete installation you will run Metasploit framework in your Termux app...
 
